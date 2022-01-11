@@ -9,3 +9,16 @@ export const BtnItem = styled.li`
     margin-right: 10px;
   }
 `;
+export const Btn = styled.button`
+  padding: 5px;
+  text-transform: uppercase;
+  color: black;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+  :hover {
+    background-color: blue;
+    color: white;
+  }
+`;

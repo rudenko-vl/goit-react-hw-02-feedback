@@ -1,20 +1,14 @@
 import React from "react";
-import { BtnList, BtnItem } from "./FeedbackOptions.styled";
+import { BtnItem, Btn } from "./FeedbackOptions.styled";
 
-function FeedbackOptions() {
-  return (
-    <BtnList>
-      <BtnItem>
-        <button>Good</button>
-      </BtnItem>
-      <BtnItem>
-        <button>Neutral</button>
-      </BtnItem>
-      <BtnItem>
-        <button>Bad</button>
-      </BtnItem>
-    </BtnList>
-  );
+function FeedbackOptions({ options, onHandleFeedback }) {
+  return options.map((option) => (
+    <BtnItem key={option}>
+      <Btn type="button" onClick={() => onHandleFeedback(option)}>
+        {option}
+      </Btn>
+    </BtnItem>
+  ));
 }
 
 export default FeedbackOptions;

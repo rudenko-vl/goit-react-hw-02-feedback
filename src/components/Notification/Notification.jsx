@@ -1,8 +1,13 @@
 import React from "react";
 import PropTypes from "prop-types";
+import { Notif, NotifWrapp } from "./Notification.styled";
 
 function Notification({ message }) {
-  return <p>{message}</p>;
+  return (
+    <NotifWrapp>
+      <Notif>{message}</Notif>
+    </NotifWrapp>
+  );
 }
 
 Notification.propTypes = {
