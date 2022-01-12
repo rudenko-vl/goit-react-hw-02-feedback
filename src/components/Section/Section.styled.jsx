@@ -4,4 +4,5 @@ export const Container = styled.div`
   flex-direction: column;
   align-items: center;
   padding: 10px;
+  background-color: #FFFFCC;
 `;
